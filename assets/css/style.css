@@ -1,0 +1,33 @@
+
+
+
+
+body {
+    background-image: url(../images/abstract-blue-background.jpg);
+    background-size: cover;
+    background-position: 80%;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    font-size: 50px;
+    height: 200px;
+    width: 200px;
+    padding: 2px;
+    border-radius: 30px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    right: 100px
+     }
+
+
