@@ -1,22 +1,30 @@
 
 
-
+header {padding: 20px 35px;
+  background-color: #39a6b2;
+  display: flex; 
+  
+flex-wrap: wrap;
+ top: 0;
+ align-items: center;
+}
+header h1{
+font-size: 50px;
+align-items: center;
+}
+#timer{
+top: -25px;
+padding:0px ;
+height: 100px;
+width: 200px;
+}
 
 body {
-    background-image: url(../images/abstract-blue-background.jpg);
-    background-size: cover;
-    background-position: 80%;
-    color: var(--grey);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: royalblue;
     display: flex;
     font-size: 50px;
     height: 200px;
@@ -30,4 +38,38 @@ p {
     right: 100px
      }
 
+  .button {
+      background-color: white;
+      display: inline-block;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      margin: 8px 150px;
+      cursor: pointer;
+      width: 600px;
+    }
+    
+.question-hero {
+  background-color: royalblue; 
+  align-items: flex-start; 
+  flex: 0 1 100%;
+  display: block;
+  justify-content: center; 
+  flex-wrap: nowrap; 
+  background-size: cover; 
+  background-position: 80%; 
+  background-attachment: fixed;
+padding: 50px;
+margin: 50px 50px 0 0;
+width: 100%;
 
+}   
+.question-hero h1{
+color: black;
+text-align: center;
+font-size: 40px;
+}
