@@ -23,5 +23,30 @@ function updateCowndown() {
     time--;
 }
 
-// Create a new task
-formEl.addEventListener("submit", taskFormHandler);
+// Create click event for answer
+// function answerQuestion (){
+
+    function questionCorrect() {
+        document.getElementById("answerResponse").innerHTML = "Correct";
+    }
+    function questionWrong() {
+        document.getElementById("answerResponse").innerHTML = "Wrong";
+    }
+
+
+//    document.getElementById("button1").addEventListener("click", function (){
+//         alert("did this work?")
+//         });
+
+// document.getElementById("button2").addEventListener("click", function (){
+//     alert("did this work?")
+//     });
+// document.getElementById("button3").addEventListener("click", function (){
+//         alert("did this work?")
+//         });
+// document.getElementById("button4").addEventListener("click", function (){
+//     alert("did this work?")
+//             });    
+            
+
+

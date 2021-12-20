@@ -2,25 +2,29 @@
 
 header {padding: 20px 35px;
   background-color: #39a6b2;
-  display: flex; 
-  
+ 
+padding: 50px;
+margin: 50px 50px 0 0;
+width: 100%;
 flex-wrap: wrap;
  top: 0;
- align-items: center;
+ align-items: center; 
 }
 header h1{
 font-size: 50px;
 align-items: center;
 }
 #timer{
-top: -25px;
+top: 60px;
 padding:0px ;
 height: 100px;
 width: 200px;
+right: 200px;
 }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 p {
@@ -38,7 +42,7 @@ p {
     right: 100px
      }
 
-  .button {
+  #button, #button1, #button2, #button3, #button4 {
       background-color: white;
       display: inline-block;
       border: none;
@@ -46,7 +50,6 @@ p {
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
-      display: inline-block;
       font-size: 30px;
       margin: 8px 150px;
       cursor: pointer;
@@ -54,7 +57,7 @@ p {
     }
     
 .question-hero {
-  background-color: royalblue; 
+  background-image: url(../images/abstract-blue-background.jpg);
   align-items: flex-start; 
   flex: 0 1 100%;
   display: block;
@@ -73,3 +76,10 @@ color: black;
 text-align: center;
 font-size: 40px;
 }
+
+#answerResponse{
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  }
+  
