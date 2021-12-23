@@ -1,10 +1,43 @@
 
-body{
-text-align: center;
+*, * ::before, *::after {
 
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 149, 168);
+}
+
+.main-container{
+
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+box-shadow: 0 0 10px 2px;
 }
 
 
+.btn-grid{
+display: grid;
+grid-template-columns: repeat(2, auto);
+gap:10px;
+margin: 20px 0;
+}
+
+
+/* 
 header {padding: 20px 35px;
   background-color: #39a6b2;
  
@@ -25,14 +58,11 @@ padding:0px ;
 height: 100px;
 width: 200px;
 right: 200px;
-}
+} */
 
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-}
 /* this p is for the timer */
-p {
+/* p {
     color: royalblue;
     display: flex;
     font-size: 50px;
@@ -45,28 +75,56 @@ p {
     justify-content: center;
     position:absolute;
     right: 100px
-     }
+     } */
 
-  .button {
-      background-color: white;
-      display: inline-block;
-      border: none;
-      color: black;
-      padding: 20px;
-      font-size: 30px;
-      margin: 30px 150px;
-      cursor: pointer;
-      width: 600px;
+  .btn {
+    background-color: khaki;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
     }
-    
-.question-hero {
-  background-image: url(../images/abstract-blue-background.jpg);
-  
+   
+.btn:hover{
+  border-color: red;
+}
 
+.btn.correct{
+  background-color:  green;
+}
+.btn.wrong{
+  background-color: red;
+}
+
+.start-btn, .next-btn {
+  font-size: 30px;
+  font-weight: bold;
+  padding:  10px 20px;
+}
+
+.controls {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hide{
+display: none;
+
+}
+
+/* .main-container{
+  width: 800px;
+  max-width: 80%;
+
+}
+
+.question-container {
+  background-image: url(../images/abstract-blue-background.jpg);
   background-size: cover; 
-  height: 700px;
-  margin: 50px 50px 0 0;
-  width: 100%;
+  width: 800px;
+  max-width: 80%;
+  ;
 
 }   
 .question-title{
@@ -86,4 +144,4 @@ position: relative;
   color: red;
   
   font-size: 40px;
-}
+} */
