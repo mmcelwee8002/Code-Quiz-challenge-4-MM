@@ -24,17 +24,23 @@
 // }
 
 var startButton = document.getElementById("start-btn")
+var questionContainerEl = document.getElementById('question-container');
+var shuffledQuestions, currentQuestionIndex;
+
+
 
 startButton.addEventListener('click', startQuiz)
 
 function startQuiz (){
 console.log('started')
-
+startButton.classList.add('hide');
+questionContainerEl.classList.remove('hide')
+setNextQuestion()
 }
 
+
+
 function setNextQuestion(){
-
-
 
 }
 
@@ -43,3 +49,14 @@ function selectAnswer(){
 
 }
 
+// questions Objects
+var questions= [
+  {
+  question:  "What is the name of Minnesota's Football team?",
+  answer: [
+    {text: 'Vikings', correct: true},
+    {text: 'Twins', correct: false}
+  ]
+  }  
+]
+  
