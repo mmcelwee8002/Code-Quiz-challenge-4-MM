@@ -43,7 +43,8 @@ button4: "Timberwolves",
   button4: "button 4",
   }
 ]
-
+var questionNumber = 0
+// variable for the score
 var body = document.body;
 var h1El = document.createElement("h1");
 var infoEl = document.createElement("div");
@@ -59,11 +60,13 @@ var li0 = document.createElement("ul")
 
 
 // Add text for list items
-li0.textContent = questions[0].question;
-li1.textContent = questions[0].button1;
-li2.textContent = questions[0].button2;
-li3.textContent = questions[0].button3;
-li4.textContent = questions[0].button4;
+//  need to turn into a function to display questions
+// itterating on "questionNumber"
+li0.textContent = questions[questionNumber].question;
+li1.textContent = questions[questionNumber].answer;
+li2.textContent = questions[questionNumber].button2;
+li3.textContent = questions[questionNumber].button3;
+li4.textContent = questions[questionNumber].button4;
 
 
 body.appendChild(h1El)
@@ -87,3 +90,17 @@ li1.setAttribute("class" , "button" );
 li2.setAttribute("class" , "button" );
 li3.setAttribute("class" , "button" );
 li4.setAttribute("class" , "button" );
+
+
+// this is one function
+// I need a function that listens for click event of the buttons
+// click a button is the button = question.answer ? 
+// if correct display corrrect if incorrect display wrong and subtract from score
+// increment the question number 
+
+// check to see if you are out of questions (question array lenght).  If not out of questions
+// display the next question if are out of questions display end results
+
+
+
+//function to show end results and store end results (an array that holds top scores)
