@@ -1,14 +1,16 @@
 
 //this is the timer section.  Set Starting minues as the timer start point
-const startingMinutes = .0;
+var startingMinutes = 2;
 let time = startingMinutes * 60;
 
 const timerEl = document.getElementById('timer');
 
-setInterval(updateCowndown, 1000);
 
-function updateCowndown() {
+// setInterval(updateCowndown, 1000);
 
+document.getElementById('start-btn').addEventListener('click', function () {
+
+document.getElementById('timer').innerHTML = --startingMinutes;
     var minutes = Math.floor(time / 60)
 
     var seconds = time % 60
@@ -21,7 +23,11 @@ function updateCowndown() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     timerEl.innerHTML = `${minutes}:${seconds}`;
     time--;
-}
+    console.log('timer')
+})
+
+
+
 
 var startButton = document.getElementById("start-btn")
 var nextButton = document.getElementById("next-btn")
