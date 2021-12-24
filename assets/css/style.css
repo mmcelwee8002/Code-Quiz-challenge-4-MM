@@ -37,8 +37,8 @@ margin: 20px 0;
 }
 
 
-/* 
-header {padding: 20px 35px;
+
+/* header {padding: 20px 35px;
   background-color: #39a6b2;
  
 padding: 50px;
@@ -51,18 +51,20 @@ header h1{
 font-size: 50px;
 text-align: center;
 flex-wrap: wrap;
-}
+} */
+
+
 #timer{
 top: 60px;
 padding:0px ;
 height: 100px;
 width: 200px;
 right: 200px;
-} */
+}
 
 
 /* this p is for the timer */
-/* p {
+p {
     color: royalblue;
     display: flex;
     font-size: 50px;
@@ -75,7 +77,7 @@ right: 200px;
     justify-content: center;
     position:absolute;
     right: 100px
-     } */
+     } 
 
   .btn {
     background-color: khaki;
@@ -93,7 +95,8 @@ right: 200px;
   background-color:  green;
 }
 .btn.wrong{
-  background-color: red;
+  background-color: rgb(235, 6, 6);
+  border-color: black;
 }
 
 .start-btn, .next-btn {
