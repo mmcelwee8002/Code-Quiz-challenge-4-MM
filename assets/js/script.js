@@ -1,19 +1,27 @@
 
 //this is the timer section.  Set Starting minues as the timer start point
-var startingMinutes = 2;
+var startingMinutes =(2);
 let time = startingMinutes * 60;
+
+var x = startingMinutes 
 
 const timerEl = document.getElementById('timer');
 
+// document.getElementById('timer').innerHTML = x
 
-// setInterval(updateCowndown, 1000);
+function timer(){
+setInterval(updateCountdown, 1000);
 
-document.getElementById('start-btn').addEventListener('click', function () {
+}
 
-document.getElementById('timer').innerHTML = --startingMinutes;
-    var minutes = Math.floor(time / 60)
+document.getElementById('start-btn').addEventListener('click', timer)
+
+function updateCountdown () {
+      var minutes = Math.floor(time / 60)
 
     var seconds = time % 60
+
+  
     // this if statement stops the clock at zero 0
     if (time <= -1) { //added this, checks if time <= -1 and updates variables
         time = 0;
@@ -24,7 +32,7 @@ document.getElementById('timer').innerHTML = --startingMinutes;
     timerEl.innerHTML = `${minutes}:${seconds}`;
     time--;
     console.log('timer')
-})
+}
 
 
 
@@ -48,7 +56,7 @@ nextButton.addEventListener ('click' , () => {
 function startQuiz (){
 
 startButton.classList.add('hide');
-shuffledQuestions = questions.sort(() => Math.random - .5)
+shuffledQuestions = questions.sort() 
 currentQuestionIndex = 0
 questionContainerEl.classList.remove('hide')
 setNextQuestion()
@@ -121,7 +129,7 @@ function setStatusClass(element, correct){
     element.classList.remove('wrong')
   }
 
-
+//Need a function to end the quiz
 
 
 
@@ -146,8 +154,52 @@ var questions= [
       {text: 'Jessica Wickson', correct: false},
       {text: 'Bobbie Feldman', correct: false}
     ]
-    } 
-  
+    } ,
+    {
+      question:  "Which team won the first Super Bowl?",
+      answer: [
+        {text: 'Kansas City Chiefs', correct: false},
+        {text: 'Green Bay Packers', correct: true},
+        {text: 'Dallas Cowboys', correct: false},
+        {text: 'Oakland Raiders', correct: false}
+      ]
+      } ,
+      {
+        question:  "How many Super Bowls has Tom Brady won?",
+        answer: [
+          {text: '3', correct: false},
+          {text: '5', correct: false},
+          {text: '7', correct: true},
+          {text: '9', correct: false}
+        ]
+        } ,
+        {
+          question:  "What City has hosted the most Super Bowls?",
+          answer: [
+            {text: 'Los Angeles', correct: false},
+            {text: 'Tampa', correct: false},
+            {text: 'New Orleans', correct: false},
+            {text: 'Miami', correct: true}
+          ]
+          },
+          {
+            question:  "Where is the 2021 Super Bowl?",
+            answer: [
+              {text: 'Los Angeles', correct: true},
+              {text: 'Tampa', correct: false},
+              {text: 'New Orleans', correct: false},
+              {text: 'Miami', correct: false}
+            ]
+            } ,
+            {
+              question:  "Which Team won the 2021 NBA Championship",
+              answer: [
+                {text: 'Los Angeles Lakers', correct: false},
+                {text: 'Golden State Warriors', correct: false},
+                {text: 'San Antonio Spurs', correct: false},
+                {text: 'Milwaukee Bucks', correct: true}
+              ]
+              }   
   
 
 
