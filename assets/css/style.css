@@ -28,6 +28,17 @@ body{
 box-shadow: 0 0 10px 2px;
 }
 
+.second-container{
+
+  width: 300px;
+  max-width: 80%;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+  height: 80px;
+box-shadow: 0 0 10px 2px;
+}
 
 .btn-grid{
 display: grid;
@@ -36,24 +47,6 @@ gap:10px;
 margin: 20px 0;
 }
 
-
-
-/* header {padding: 20px 35px;
-  background-color: #39a6b2;
- 
-padding: 50px;
-margin: 50px 50px 0 0;
-width: 100%;
-top: 0;
-
-}
-header h1{
-font-size: 50px;
-text-align: center;
-flex-wrap: wrap;
-} */
-
-
 #timer{
 top: 60px;
 padding:0px ;
@@ -61,6 +54,9 @@ height: 100px;
 width: 200px;
 right: 200px;
 }
+
+
+
 
 
 /* this p is for the timer */
@@ -76,7 +72,10 @@ p {
     align-items: center;
     justify-content: center;
     position:absolute;
-    right: 100px
+    right: 100px;
+   border: 3px solid black;
+   box-shadow: 0 0 10px 2px;
+   box-shadow: black;
      } 
 
   .btn {
@@ -91,7 +90,7 @@ p {
   border-color: red;
 }
 
-.btn.correct{
+.btn.correct, #btn.correct{
   background-color:  green;
 }
 .btn.wrong{
@@ -111,40 +110,18 @@ justify-content: center;
 align-items: center;
 }
 
+.score {
+  font-size: 30px;
+  font-weight: bold;
+  padding:  10px 20px;
+}
+
+
 .hide{
 display: none;
-
 }
 
-/* .main-container{
-  width: 800px;
-  max-width: 80%;
 
-}
-
-.question-container {
-  background-image: url(../images/abstract-blue-background.jpg);
-  background-size: cover; 
-  width: 800px;
-  max-width: 80%;
-  ;
-
-}   
-.question-title{
-  color: white;
-font-size: 50px;
-position: relative;
-  padding: 100px;
-}
-
-#answerResponse{
-  color: green;
-  
-  font-size: 40px;
-}
-
-#answerResponse1{
+.counter-label{
   color: red;
-  
-  font-size: 40px;
-} */
+}
