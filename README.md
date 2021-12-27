@@ -6,7 +6,7 @@
 A website is challange #3 for bootcamp so it is an assignment
 It is the start of a password generator that I will use to showcase my development skills.
 
-The purpose is the generate a quiz
+The purpose is the generate a quiz that has a countdown and can store high score
 
 
 ## Built With
@@ -26,7 +26,8 @@ Matthew McElwee
 
 
 ### Screenshots of Portfolio
- ![Password Generator #1](assets/images/PW-Generator-1.png) "Image #1");
+ ![Quiz #1](assets/images/Quiz-1.png) "Image #1");
 
- ![Password Generator #1](assets/images/PW-Generator-2.png)  "Image #2");
+ ![Quiz #2](assets/images/Quiz-2.png)  "Image #2");
 
+ ![Quiz #3](assets/images/Quiz-3.png)  "Image #3");

@@ -219,11 +219,11 @@ function quizOver (){
   }
   }
 
-// function quizEnd(){
-//   clearInterval(updateCountdown);
-//   if (time <= 0)
-// alert('Quiz over')
-// }
+function quizEnd(){
+  clearInterval(updateCountdown);
+  if (time <= 0)
+alert('Quiz over')
+}
  
 
 
